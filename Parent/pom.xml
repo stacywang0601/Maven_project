@@ -5,6 +5,12 @@
 	<artifactId>Parent</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>pom</packaging>
+	<!-- install together -->
+	<modules>
+		<module>../Hello</module>
+		<module>../HelloFriend</module>
+		<module>../MakeFriends</module>
+	</modules>
 
 	<!-- manage dependencies for all children -->
 	<dependencyManagement>
