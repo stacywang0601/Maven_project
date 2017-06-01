@@ -5,6 +5,14 @@
 	<artifactId>HelloFriend</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 
+	<!-- define parent project -->
+	<parent>
+		<groupId>com.pers.maven</groupId>
+		<artifactId>Parent</artifactId>
+		<version>0.0.1-SNAPSHOT</version>
+		<!-- relative path to pom.xml in parent project -->
+		<relativePath>../Parent/pom.xml</relativePath>
+	</parent>
 	<dependencies>
 		<dependency>
 			<groupId>junit</groupId>
@@ -19,6 +27,7 @@
 			<version>0.0.1-SNAPSHOT</version>
 			<scope>compile</scope>
 		</dependency>
+
 
 	</dependencies>
 </project>
